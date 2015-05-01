@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7983951AF120AE00EE37E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7983941AF120AE00EE37E0 /* AppDelegate.swift */; };
+		DA7983971AF120AE00EE37E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7983961AF120AE00EE37E0 /* ViewController.swift */; };
+		DA79839A1AF120AE00EE37E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7983981AF120AE00EE37E0 /* Main.storyboard */; };
+		DA79839C1AF120AE00EE37E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA79839B1AF120AE00EE37E0 /* Images.xcassets */; };
+		DA79839F1AF120AE00EE37E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA79839D1AF120AE00EE37E0 /* LaunchScreen.xib */; };
+		DA7983AB1AF120AE00EE37E0 /* GATestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7983AA1AF120AE00EE37E0 /* GATestTests.swift */; };
+		DA7983C41AF1224200EE37E0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983C31AF1224200EE37E0 /* CoreData.framework */; };
+		DA7983C61AF1224B00EE37E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983C51AF1224B00EE37E0 /* SystemConfiguration.framework */; };
+		DA7983C81AF1225400EE37E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983C71AF1225400EE37E0 /* libz.dylib */; };
+		DA7983CA1AF1225E00EE37E0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983C91AF1225E00EE37E0 /* libsqlite3.dylib */; };
+		DA7983CC1AF1227200EE37E0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983CB1AF1227200EE37E0 /* AdSupport.framework */; };
+		DA7983CF1AF1230100EE37E0 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983CD1AF1230100EE37E0 /* libAdIdAccess.a */; };
+		DA7983D01AF1230100EE37E0 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7983CE1AF1230100EE37E0 /* libGoogleAnalyticsServices.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7983A51AF120AE00EE37E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7983871AF120AE00EE37E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA79838E1AF120AE00EE37E0;
+			remoteInfo = GATest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA79838F1AF120AE00EE37E0 /* GATest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GATest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7983931AF120AE00EE37E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7983941AF120AE00EE37E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA7983961AF120AE00EE37E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7983991AF120AE00EE37E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA79839B1AF120AE00EE37E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA79839E1AF120AE00EE37E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA7983A41AF120AE00EE37E0 /* GATestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GATestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7983A91AF120AE00EE37E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7983AA1AF120AE00EE37E0 /* GATestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATestTests.swift; sourceTree = "<group>"; };
+		DA7983B61AF121A400EE37E0 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		DA7983B71AF121A400EE37E0 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		DA7983B81AF121A400EE37E0 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		DA7983B91AF121A400EE37E0 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		DA7983BA1AF121A400EE37E0 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		DA7983BB1AF121A400EE37E0 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		DA7983BC1AF121A400EE37E0 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		DA7983BD1AF121A400EE37E0 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		DA7983BE1AF121A400EE37E0 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		DA7983BF1AF121A400EE37E0 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		DA7983C01AF121B600EE37E0 /* GATest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GATest-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA7983C31AF1224200EE37E0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA7983C51AF1224B00EE37E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA7983C71AF1225400EE37E0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DA7983C91AF1225E00EE37E0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DA7983CB1AF1227200EE37E0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DA7983CD1AF1230100EE37E0 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = ../libAdIdAccess.a; sourceTree = "<group>"; };
+		DA7983CE1AF1230100EE37E0 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA79838C1AF120AE00EE37E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7983CC1AF1227200EE37E0 /* AdSupport.framework in Frameworks */,
+				DA7983CF1AF1230100EE37E0 /* libAdIdAccess.a in Frameworks */,
+				DA7983CA1AF1225E00EE37E0 /* libsqlite3.dylib in Frameworks */,
+				DA7983D01AF1230100EE37E0 /* libGoogleAnalyticsServices.a in Frameworks */,
+				DA7983C81AF1225400EE37E0 /* libz.dylib in Frameworks */,
+				DA7983C61AF1224B00EE37E0 /* SystemConfiguration.framework in Frameworks */,
+				DA7983C41AF1224200EE37E0 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7983A11AF120AE00EE37E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7983861AF120AE00EE37E0 = {
+			isa = PBXGroup;
+			children = (
+				DA7983911AF120AE00EE37E0 /* GATest */,
+				DA7983A71AF120AE00EE37E0 /* GATestTests */,
+				DA7983901AF120AE00EE37E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7983901AF120AE00EE37E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA79838F1AF120AE00EE37E0 /* GATest.app */,
+				DA7983A41AF120AE00EE37E0 /* GATestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7983911AF120AE00EE37E0 /* GATest */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983B41AF1217000EE37E0 /* frameworks */,
+				DA7983941AF120AE00EE37E0 /* AppDelegate.swift */,
+				DA7983961AF120AE00EE37E0 /* ViewController.swift */,
+				DA7983981AF120AE00EE37E0 /* Main.storyboard */,
+				DA79839B1AF120AE00EE37E0 /* Images.xcassets */,
+				DA79839D1AF120AE00EE37E0 /* LaunchScreen.xib */,
+				DA7983921AF120AE00EE37E0 /* Supporting Files */,
+				DA7983C01AF121B600EE37E0 /* GATest-Bridging-Header.h */,
+			);
+			path = GATest;
+			sourceTree = "<group>";
+		};
+		DA7983921AF120AE00EE37E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983931AF120AE00EE37E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7983A71AF120AE00EE37E0 /* GATestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983AA1AF120AE00EE37E0 /* GATestTests.swift */,
+				DA7983A81AF120AE00EE37E0 /* Supporting Files */,
+			);
+			path = GATestTests;
+			sourceTree = "<group>";
+		};
+		DA7983A81AF120AE00EE37E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983A91AF120AE00EE37E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7983B41AF1217000EE37E0 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983C91AF1225E00EE37E0 /* libsqlite3.dylib */,
+				DA7983C71AF1225400EE37E0 /* libz.dylib */,
+				DA7983C51AF1224B00EE37E0 /* SystemConfiguration.framework */,
+				DA7983C31AF1224200EE37E0 /* CoreData.framework */,
+				DA7983B51AF121A400EE37E0 /* Library */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		DA7983B51AF121A400EE37E0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DA7983CD1AF1230100EE37E0 /* libAdIdAccess.a */,
+				DA7983CE1AF1230100EE37E0 /* libGoogleAnalyticsServices.a */,
+				DA7983CB1AF1227200EE37E0 /* AdSupport.framework */,
+				DA7983B61AF121A400EE37E0 /* GAI.h */,
+				DA7983B71AF121A400EE37E0 /* GAIDictionaryBuilder.h */,
+				DA7983B81AF121A400EE37E0 /* GAIEcommerceFields.h */,
+				DA7983B91AF121A400EE37E0 /* GAIEcommerceProduct.h */,
+				DA7983BA1AF121A400EE37E0 /* GAIEcommerceProductAction.h */,
+				DA7983BB1AF121A400EE37E0 /* GAIEcommercePromotion.h */,
+				DA7983BC1AF121A400EE37E0 /* GAIFields.h */,
+				DA7983BD1AF121A400EE37E0 /* GAILogger.h */,
+				DA7983BE1AF121A400EE37E0 /* GAITrackedViewController.h */,
+				DA7983BF1AF121A400EE37E0 /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA79838E1AF120AE00EE37E0 /* GATest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7983AE1AF120AE00EE37E0 /* Build configuration list for PBXNativeTarget "GATest" */;
+			buildPhases = (
+				DA79838B1AF120AE00EE37E0 /* Sources */,
+				DA79838C1AF120AE00EE37E0 /* Frameworks */,
+				DA79838D1AF120AE00EE37E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GATest;
+			productName = GATest;
+			productReference = DA79838F1AF120AE00EE37E0 /* GATest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7983A31AF120AE00EE37E0 /* GATestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7983B11AF120AE00EE37E0 /* Build configuration list for PBXNativeTarget "GATestTests" */;
+			buildPhases = (
+				DA7983A01AF120AE00EE37E0 /* Sources */,
+				DA7983A11AF120AE00EE37E0 /* Frameworks */,
+				DA7983A21AF120AE00EE37E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7983A61AF120AE00EE37E0 /* PBXTargetDependency */,
+			);
+			name = GATestTests;
+			productName = GATestTests;
+			productReference = DA7983A41AF120AE00EE37E0 /* GATestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7983871AF120AE00EE37E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Fun Anima Co., Ltd.";
+				TargetAttributes = {
+					DA79838E1AF120AE00EE37E0 = {
+						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					DA7983A31AF120AE00EE37E0 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DA79838E1AF120AE00EE37E0;
+					};
+				};
+			};
+			buildConfigurationList = DA79838A1AF120AE00EE37E0 /* Build configuration list for PBXProject "GATest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7983861AF120AE00EE37E0;
+			productRefGroup = DA7983901AF120AE00EE37E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA79838E1AF120AE00EE37E0 /* GATest */,
+				DA7983A31AF120AE00EE37E0 /* GATestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA79838D1AF120AE00EE37E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA79839A1AF120AE00EE37E0 /* Main.storyboard in Resources */,
+				DA79839F1AF120AE00EE37E0 /* LaunchScreen.xib in Resources */,
+				DA79839C1AF120AE00EE37E0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7983A21AF120AE00EE37E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA79838B1AF120AE00EE37E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7983971AF120AE00EE37E0 /* ViewController.swift in Sources */,
+				DA7983951AF120AE00EE37E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7983A01AF120AE00EE37E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7983AB1AF120AE00EE37E0 /* GATestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7983A61AF120AE00EE37E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA79838E1AF120AE00EE37E0 /* GATest */;
+			targetProxy = DA7983A51AF120AE00EE37E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7983981AF120AE00EE37E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7983991AF120AE00EE37E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA79839D1AF120AE00EE37E0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA79839E1AF120AE00EE37E0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7983AC1AF120AE00EE37E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA7983AD1AF120AE00EE37E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7983AF1AF120AE00EE37E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GATest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GATest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GATest/GATest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA7983B01AF120AE00EE37E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GATest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GATest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GATest/GATest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DA7983B21AF120AE00EE37E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GATestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GATest.app/GATest";
+			};
+			name = Debug;
+		};
+		DA7983B31AF120AE00EE37E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GATestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GATest.app/GATest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA79838A1AF120AE00EE37E0 /* Build configuration list for PBXProject "GATest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7983AC1AF120AE00EE37E0 /* Debug */,
+				DA7983AD1AF120AE00EE37E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7983AE1AF120AE00EE37E0 /* Build configuration list for PBXNativeTarget "GATest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7983AF1AF120AE00EE37E0 /* Debug */,
+				DA7983B01AF120AE00EE37E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7983B11AF120AE00EE37E0 /* Build configuration list for PBXNativeTarget "GATestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7983B21AF120AE00EE37E0 /* Debug */,
+				DA7983B31AF120AE00EE37E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7983871AF120AE00EE37E0 /* Project object */;
+}
