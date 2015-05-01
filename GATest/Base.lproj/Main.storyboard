@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbw-Zw-Q0D">
-                                <rect key="frame" x="26" y="60" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="26" y="60" width="39" height="30"/>
+                                <state key="normal" title="Event">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -26,12 +26,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg2-1F-CE8">
-                                <rect key="frame" x="172" y="230" width="41" height="30"/>
+                                <rect key="frame" x="26" y="166" width="41" height="30"/>
                                 <state key="normal" title="Crash">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onTappedCrash:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UPE-MF-rXr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-Qe-jf9">
+                                <rect key="frame" x="26" y="135" width="69" height="30"/>
+                                <state key="normal" title="Exception">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTappedException:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AmR-H7-xn0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aie-l7-ogY">
+                                <rect key="frame" x="26" y="91" width="63" height="30"/>
+                                <state key="normal" title="Category">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTappedCreateCategory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yil-fz-UMD"/>
                                 </connections>
                             </button>
                         </subviews>

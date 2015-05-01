@@ -28,30 +28,43 @@ class ViewController: GAITrackedViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreate d.
     }
 
+    
 
     @IBAction func onTappedButton(sender: AnyObject) {
         var tracker = GAI.sharedInstance().defaultTracker
         var dict = GAIDictionaryBuilder.createEventWithCategory("ui_action", action: "button_press", label: "play", value: 0.1).build()
         //
         
+        
         tracker.send(dict)
         
-        
-        var dict2 = GAIDictionaryBuilder.createEventWithCategory("Travel", action: "OpenCamera", label: "Label1", value: 1.0).build()
-        
-        tracker.send(dict2)
         
         GAI.sharedInstance().dispatch()
         
     }
+    
+    @IBAction func onTappedCreateCategory(sender: AnyObject) {
+        var tracker = GAI.sharedInstance().defaultTracker
+        
+        var dict2 = GAIDictionaryBuilder.createEventWithCategory("Travel", action: "OpenCamera", label: "Label1", value: 1.0).build()
+        
+        tracker.send(dict2)
+    }
+    
+    @IBAction func onTappedException(sender: AnyObject) {
+        var tracker = GAI.sharedInstance().defaultTracker
+        var err = GAIDictionaryBuilder.createExceptionWithDescription("知道錯我還輸入幹嘛", withFatal: 1.0).build()
+        tracker.send(err)
+    }
+    
     @IBAction func onTappedCrash(sender: AnyObject) {
-        var e = NSException(name:"There is no spoon.", reason:"閃腿閃退了！", userInfo:nil)
-        e.raise()
-        
-        
+        var userInfo = ["age":12]
+
+        var e = NSException(name:"啥名字.", reason:"閃腿閃退了！", userInfo:userInfo)
+        e.raise()        
     }
 }
 
